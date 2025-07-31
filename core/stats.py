@@ -60,11 +60,15 @@ class DirObj:
  
     
     def print_stats(self):
-        print(f"Total Files: {len(self.files)}\n"
-              f"Total Folders: {len(self.folders)}\n"
-              f"Total Size: {self.total_size}\n"
-              f"Largest File: {self.specials[0]}- {self.specials[1]}\n"
-              f"Smallest File: {self.specials [2]}- {self.specials[3]}\n"
+        print("\n"
+              "                  STATS\n"
+              "--------------------------------------------"
+              "\n"
+              f"        Total Files: {len(self.files)}\n"
+              f"        Total Folders: {len(self.folders)}\n"
+              f"        Total Size: {self.total_size}\n"
+              f"        Largest File: {self.specials[0]}- {self.specials[1]}\n"
+              f"        Smallest File: {self.specials [2]}- {self.specials[3]}\n"
               
               )
 

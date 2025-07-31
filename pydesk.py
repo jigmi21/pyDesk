@@ -1,5 +1,6 @@
 import argparse
 from core.stats import DirObj
+from core.organize import FileOrganizer
 
 def main():
     parser = argparse.ArgumentParser()
@@ -8,6 +9,11 @@ def main():
     directory_object = DirObj(arg.path)
     directory_object.run_stats(arg.path, human = True)
     directory_object.print_stats()
+    org_obj = FileOrganizer(arg.path)
+    org_obj.action()
+    org_obj.move()
+
+
 
 
 
